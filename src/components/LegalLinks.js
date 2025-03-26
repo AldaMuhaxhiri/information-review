@@ -1,18 +1,17 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 const LegalLinks = () => {
   return (
     <div className="w-full text-center text-sm text-gray-900 font-medium">
-      <a href="#" className="text-gray-700 hover:underline mx-2">
+      <a href="#" role="link" className="text-gray-700 hover:underline mx-2" onClick={(e) => e.preventDefault()}>
         Terms and Conditions
       </a>
       <span className="text-black">|</span>
-      <a href="#" className="text-gray-700 hover:underline mx-2">
+      <a href="#" role="link" className="text-gray-700 hover:underline mx-2" onClick={(e) => e.preventDefault()}>
         Privacy Policy
       </a>
       <span className="text-black">|</span>
-      <a href="#" className="text-gray-700 hover:underline mx-2">
+      <a href="#" role="link" className="text-gray-700 hover:underline mx-2" onClick={(e) => e.preventDefault()}>
         California Privacy
       </a>
     </div>
