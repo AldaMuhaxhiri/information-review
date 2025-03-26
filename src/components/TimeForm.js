@@ -6,7 +6,7 @@ const TimeSelector = () => {
   const navigate = useNavigate();
 
   const times = Array.from({ length: 13 }, (_, i) => {
-    const hour = i + 8; // 8 AM to 8 PM
+    const hour = i + 8; 
     const period = hour < 12 ? "AM" : "PM";
     const formattedHour = hour > 12 ? hour - 12 : hour;
     return `${formattedHour} ${period} CST`;
@@ -14,17 +14,17 @@ const TimeSelector = () => {
 
   const handleContinue = () => {
     if (selectedTime) {
-      navigate("/form", { state: { selectedTime } }); // Pass selectedTime to Form.js
+      navigate("/form", { state: { selectedTime } }); 
     }
   };
 
   return (
-    <div className="max-w-lg w-full">
-      <h2 className="text-6xl flex flex-wrap font-bold mb-12 whitespace-nowrap justify-center">
+    <div className="max-w-md w-full">
+      <h2 className="text-6xl flex flex-wrap font-bold mb-8 whitespace-nowrap justify-center mb-4">
         What Is The Best Time To Reach You?
       </h2>
       <select
-        className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        className="w-full p-5 border border-gray-300 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
         value={selectedTime}
         onChange={(e) => setSelectedTime(e.target.value)}
       >
@@ -35,11 +35,11 @@ const TimeSelector = () => {
           </option>
         ))}
       </select>
-      <p className="text-sm text-gray-500 mt-2 ml-[180px]">
+      <p className="text-sm text-gray-500 mt-2 ml-[160px]">
         (All times are in CST)
       </p>
       <button
-        className={`mt-4 w-full py-3 rounded-md ${
+        className={`mt-4 w-full py-4 rounded-md ${
           selectedTime
             ? "bg-blue-600 text-white hover:bg-blue-700"
             : "bg-blue-500 text-gray-200 cursor-not-allowed"
