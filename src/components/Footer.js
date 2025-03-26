@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 const Footer = () => {
@@ -29,7 +30,7 @@ const Footer = () => {
       </p>
       <p className="max-w-7xl mx-auto text-xs leading-6 mt-2">
         This website uses Google Analytics and Google Ads to track your journey
-        for marketing purposes. If you wish to opt-out of user-tracking click{" "}
+        for marketing purposes. If you wish to opt-out of user-tracking click
         <a href="#" className="text-gray-600 hover:underline">
           here
         </a>
