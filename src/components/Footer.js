@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full text-left mt-2 p-8 pt-12 bg-gray-200 text-sm text-black font-normal">
+    <div className="w-full text-left mt-2 p-10 pt-12 bg-gray-200 text-sm text-black font-medium">
       <p className="max-w-7xl mx-auto text-xs leading-6">
         This site is not a part of the Facebook website or Facebook Inc.
         Additionally, Facebook does NOT endorse this site. FACEBOOK is a
