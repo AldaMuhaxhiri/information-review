@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 const LegalLinks = () => {
@@ -9,7 +10,7 @@ const LegalLinks = () => {
       <span className="text-black">|</span>
       <a href="#" className="text-gray-700 hover:underline mx-2">
         Privacy Policy
-      </a>{" "}
+      </a>
       <span className="text-black">|</span>
       <a href="#" className="text-gray-700 hover:underline mx-2">
         California Privacy
