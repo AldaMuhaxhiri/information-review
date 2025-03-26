@@ -23,7 +23,6 @@ const Form = () => {
   };
 
   const handleSubmit = () => {
-    // Navigate to the SummaryPage with collected data
     navigate("/summary", {
       state: {
         selectedTime,
@@ -103,7 +102,7 @@ const Form = () => {
 
         <button
           onClick={handleSubmit}
-          className={`w-[50%] flex flex-wrap justify-center mx-auto mt-12 py-3 text-base rounded-md font-semibold mb-[210px] ${
+          className={`w-[50%] flex flex-wrap justify-center mx-auto mt-12 py-3 text-base rounded-md font-semibold mb-[170px] ${
             formData.firstName &&
             formData.lastName &&
             formData.email &&
