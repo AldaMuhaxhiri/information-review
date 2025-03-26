@@ -24,7 +24,7 @@ const TimeSelector = () => {
         What Is The Best Time To Reach You?
       </h2>
       <select
-        className="w-full p-5 border border-gray-300 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        className="w-full p-5 border border-gray-300 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none"
         value={selectedTime}
         onChange={(e) => setSelectedTime(e.target.value)}
       >
